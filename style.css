@@ -1,5 +1,6 @@
 body {
   font-family: 'Kaisei Opti', serif;
+  background-image: url(palmtree.png) no repeat;
 }
 header {
   display: flex;
@@ -63,9 +64,19 @@ nav ul li a {
   cursor: pointer;
   display: flex;
   align-items: center;
+  
+  
+  
+}
+a{
+  text-decoration: none;
+  color: black;
 }
 .hero button:hover {
-  background: #f8f8f8;
+  background-color: #ffcc00;
+  color: black;
+  transform: scale(1.05);
+
 }
 .hero-images {
   display: flex;
@@ -94,6 +105,7 @@ nav ul li a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: justify;
   width: 90%;
+  height: 92%;
   margin-left: auto;
 }
 
@@ -156,4 +168,200 @@ nav ul li a {
 .page-number.active {
   background: black;
   color: white;
+}
+
+/* Booking */
+.bk{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #f8ebf4;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  width: 90%;
+  height: 92%;
+  margin-left: auto;
+}
+.booking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: #F3E5EF;
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: auto;
+}
+.gallery {
+  padding: 20px;
+}
+
+.gallery h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+/* Policy Section */
+.policy-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin: 50px auto;
+  gap: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Left side text */
+.policy-text {
+  flex: 1;
+  text-align: left;
+}
+
+.policy-text h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.policy-text h3 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.policy-text ul {
+  padding-left: 20px;
+}
+
+.policy-text li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Right side images */
+.policy-images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.policy-img {
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.policy-img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer Section */
+.footer {
+  background-color: #fff; /* White background */
+  padding: 40px 20px;
+  border-top: 1px solid #ddd; /* Light border at the top */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Footer Logo & Social Media */
+.footer-logo {
+  text-align: left;
+}
+
+.footer-logo h2 {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer Text Sections */
+.footer-hours, .footer-services, .footer-contact {
+  text-align: left;
+}
+
+.footer h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+  }
+
+  .footer-logo, .footer-hours, .footer-services, .footer-contact {
+      margin-bottom: 20px;
+  }
+
+  .footer-logo h2 {
+      text-align: center;
+  }
+
+  .phone-link {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set text color */
+    font-weight: bold;
+}
+
+.phone-link:hover {
+    color: #ff0000; /* Change color on hover */
 }

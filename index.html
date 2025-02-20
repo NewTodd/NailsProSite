@@ -6,7 +6,6 @@
     <title>Nails Pro - Mt Juliet</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;700&display=swap" rel="stylesheet">
-    <script src="json.js"></script>
 </head>
 <body>
    <!-- Header Section -->
@@ -32,7 +31,9 @@
     <div class="hero-text">
         <h1>NAILS PRO</h1>
         <p>📍 MT JULIET, TN</p>
-        <button>⭐ Direction ➝</button>
+        <a href="https://www.google.com/maps/place/11338+Lebanon+Rd,+Mt.+Juliet,+TN+37122" 
+   target="_blank" class="location">
+        <button>⭐ Direction ➝</button> </a>
     </div>
     <div class="hero-images">
         <img src="nail.png.png" alt="Nail art">
@@ -56,33 +57,138 @@
       <img src="insidsalon.png" alt="Salon Interior">
   </section>
 <!-- Menu Section -->
-<section class="menu">
-  <h2>MENU</h2>
-  <ul>
-      <li>Regular Pedicure - $35</li>
-      <li>Spa Pedicure - $45</li>
-      <li>Deluxe Pedicure - $55</li>
-      <li>Nails Pro Special Pedi - $65</li>
-      <li>Regular Manicure - $25</li>
-      <li>Gel Manicure - $40</li>
-      <li>Dipping Powder - $45</li>
-      <li>Ombre Dip - $60</li>
-      <li>French Dip (Pink&White) - $50</li>
-      <li>Acrylic Full Set - $55</li>
-      <li>Acrylic Fill - $40</li>
-      <li>Acrylic Pink & White Full Set - $65</li>
-  </ul>
+  <section class="menu">
+    <h2>MENU</h2>
+    <div class="menu-box">
+    
+        <ul id="menu-items">
+            <!-- Services will be dynamically inserted here -->
+        </ul>
+    </div>
   <div class="pagination">
     <button id="prev" class="page-btn">← Previous</button>
     <span id="page-numbers"></span>
     <button id="next" class="page-btn">Next →</button>
 </div>
+
 </section>
 </div>
-
-
 <hr>
-        <!-- Footer -->
-    <footer>
-      <p>© 2025 Nails Pro. All rights reserved.</p>
-  </footer>
+<section id="Booking" class="booking">
+  <h2 class="bk">BOOKING</h2>
+  <p>Book your appointment today!</p>
+  <div class="booking-form">
+      <form action="submit.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+          <label for="service">Service:</label>
+          <select id="service" name="service" required>
+              <option value="Acrylic Nails with Gel Polish">Acrylic Nails with Gel Polish</option>
+              <option value="Pedicure">Pedicure</option>
+              <option value="Nail Shaping">Nail Shaping</option>
+          </select>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required>
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required>
+          <button type="submit">Book Now</button>
+      </form>
+  </div>
+      
+</section>
+<!--gallery-->
+    <section class="gallery">
+        <h2 class="bk">OUR GALLERY</h2>
+        <div class="gallery-grid">
+            <img src="nail1.png" alt="Nail Design 1">
+            <img src="nail2.png" alt="Nail Design 2">
+            <img src="nails design3.png" alt="Nail Design 3">
+            <img src="nail4.png" alt="Nail Design 4">
+        </div>
+    </section>
+     <hr>
+     <!-- Policy -->
+     <section class="policy-section">
+        <div class="policy-text">
+            <h2 class="bk">OUR POLICY</h2>
+            <p>Nails Pro Mt Juliet has a strict no-refund policy. 
+                If you are unhappy with your service, please let us know before you leave the salon. 
+                We will do our best to make it right. 
+                If you have any questions or concerns, please contact us at (615) 123-4567.</p>
+            <h3>Client Policies</h3>
+            <ul>
+                <li><strong>Respectful Conduct:</strong> We reserve the right to refuse service to anyone who is rude or disrespectful.</li>
+                <li><strong>Personal Items:</strong> We are not responsible for lost or stolen items or gift cards.</li>
+                <li><strong>Refund Policy:</strong> No refunds on services; we will address any service-related concerns.</li>
+                <li><strong>Price Confirmation:</strong> Confirm prices with your nail technician before services.</li>
+                <li><strong>Property Responsibility:</strong> You are responsible for your belongings; compensation is required for any damage to salon property.</li>
+                <li><strong>Child Supervision:</strong> Children must be supervised at all times.</li>
+                <li><strong>Photography:</strong> No photography without prior consent.</li>
+                <li><strong>Cancellation Notice:</strong> Please notify us in advance if you need to cancel.</li>
+                <li><strong>Service Consultation:</strong> Consult the salon manager if unsure about services.</li>
+                <li><strong>Dissatisfaction Resolution:</strong> If dissatisfied, speak with the manager immediately to resolve the issue.</li>
+            </ul>
+        </div>
+
+        <div class="policy-images">
+            <img src="NAILpolicy.png" alt="Nail Design Policy 1" class="policy-img">
+            <img src="nailpolicy2.png" alt="Nail Design Policy 2" class="policy-img">
+        </div>
+    </section>
+<!--footer-->
+<footer class="footer">
+    <div class="footer-container">
+        
+        <!-- Left Section: Logo & Social Media -->
+        <div class="footer-logo">
+            <a href="https://www.bestprosintown.com/tn/mount-juliet/nails-pro-mt-juliet-/" target="_blank">
+                <img src="googleicon.png" alt="Google">
+            </a>
+            <h2>NAILS PRO</h2>
+        </div>
+
+        <!-- Middle Section: Business Hours -->
+        <div class="footer-hours">
+            <h3>Business Hours</h3>
+            <p>Monday: 9AM - 7PM</p>
+            <p>Tuesday: 9AM - 7PM</p>
+            <p>Wednesday: 9AM - 7PM</p>
+            <p>Thursday: 9AM - 7PM</p>
+            <p>Friday: 9AM - 7PM</p>
+            <p>Saturday: 9AM - 7PM</p>
+            <p>Sunday: 10AM - 3PM</p>
+        </div>
+
+        <!-- Middle Section: Our Services -->
+        <div class="footer-services">
+            <h3>Our Service</h3>
+            <p>Art & Design</p>
+            <p>Pedicure & Manicure</p>
+            <p>Acrylic Fullset & Fill-in</p>
+            <p>Dipping Powder</p>
+            <p>Eyebrow Waxing</p>
+            <p>Waxing</p>
+            <p>Kids Pedicure & Manicure</p>
+        </div>
+
+        <!-- Right Section: Contact Information -->
+        <div class="footer-contact">
+            <h3>Contact us</h3>
+            <a href="https://www.google.com/maps/place/11338+Lebanon+Rd,+Mt.+Juliet,+TN+37122" 
+   target="_blank" class="location">
+            <p>11338 Lebanon Rd,</p>
+            <p>Mt. Juliet, TN 37122</p></a>
+            <p><a href="tel:+16157546666" class="phone-link">(615)-754-6666</a></p>
+        </div>
+    </div>
+     <!-- Copyright Section -->
+     <div class="footer-bottom">
+        <p>© 2025 Nails Pro. All rights reserved.</p>
+    </div>
+</footer>
+</footer>
+  <script src="json.js"></script>
+</body>
+</html>

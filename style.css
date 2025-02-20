@@ -1,0 +1,159 @@
+body {
+  font-family: 'Kaisei Opti', serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f0f0f0;
+  padding: 10px 20px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.search-bar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+.search-bar input {
+  width: 200px;
+  padding: 5px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+/* Hero Section Styling */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background: linear-gradient(to bottom, #FE0952, #2D0104);
+  color: white;
+  border-radius: 20px;
+  text-align: left;
+}
+.hero-text {
+  flex: 1;
+}
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+}
+.hero p {
+  font-size: 20px;
+}
+.hero button {
+  background: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.hero button:hover {
+  background: #f8f8f8;
+}
+.hero-images {
+  display: flex;
+  gap: 10px;
+}
+.hero-images img {
+  width: 285px;
+  height: 421px;
+  border-radius: 106px;
+  object-fit: cover;
+}
+/* Layout Wrapper for About & Menu */
+.info-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px;
+  padding: 35px;
+  align-items: center;
+}
+
+/* About Section */
+.about {
+  background: #F3E5EF;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+  width: 90%;
+  margin-left: auto;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+/* Menu Section */
+.menu {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  width: 90%;
+  height: 92%;
+  margin-right: auto;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  font-size: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.page-btn {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.page-btn:hover {
+  color: black;
+}
+
+.page-number {
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #eee;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.page-number.active {
+  background: black;
+  color: white;
+}
